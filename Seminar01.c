@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// Adaugare commit 
+
 struct Masina {
 	int id;
 	int anFabricatie;
