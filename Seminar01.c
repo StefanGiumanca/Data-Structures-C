@@ -30,16 +30,16 @@ void afisare(struct Masina m) {
 	printf("Initiala Producator: %c \n", m.initialaProducator);
 }
 
-void modifica_Sofer(struct Masina m, const char* nouSofer) {
-	if (strlen(nouSofer) >= 2)
-	{
-		if (m.sofer != NULL)
-		{
-			free(m.sofer);
-		}
-		m.sofer = (char*)malloc(strlen(nouSofer) + 1);
-		strcpy_s(m.sofer, strlen(nouSofer) + 1, nouSofer);
-	}
+void modifica_Sofer(struct Masina* m, const char *nouSofer) {
+    if (strlen(nouSofer) >= 2)
+    {
+        if (m->sofer != NULL)
+        {
+            free(m->sofer);
+        }
+        m->sofer = (char *)malloc(strlen(nouSofer) + 1);
+        strcpy(m->sofer, nouSofer);
+    }
 }
 
 void dezalocare(struct Masina* m) {
@@ -54,7 +54,7 @@ int main() {
 	struct Masina masina;
 	masina = initializare(1, 2004, "Stefan", 2000, 'S');
 	afisare(masina);
-	modifica_Sofer(masina, "Marian");
+	modifica_Sofer(&masina, "Marian");
 	printf("\n");
 	afisare(masina);
 	dezalocare(&masina);
