@@ -15,7 +15,7 @@ struct StructuraMasina
 typedef struct StructuraMasina Masina;
 
 struct Nod
-{ // lista simpla inlanuita
+{ 
 	Masina info;
 	struct Nod *next;
 };
@@ -122,10 +122,6 @@ void inserareMasinaInTabela(HashTable hash, Masina masina)
 
 HashTable citireMasiniDinFisier(const char *numeFisier, int dimensiune)
 {
-	// functia primeste numele fisierului, il deschide si citeste toate masinile din fisier
-	// prin apelul repetat al functiei citireMasinaDinFisier()
-	//  aceste masini sunt inserate intr-o tabela de dispersie initializata aici
-	// ATENTIE - la final inchidem fisierul/stream-ul
 	HashTable ht = initializareHashTable(dimensiune);
 	FILE *f = fopen(numeFisier, "r");
 	while (!feof(f))
