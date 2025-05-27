@@ -1,0 +1,5 @@
+The Weeknd,25,92.5,R&B
+Metallica,40,89.3,Metal
+Beyonce,30,85.2,Pop
+Michael Jackson,10,95.0,Pop
+Kendrick Lamar,20,91.7,Hip-Hop
