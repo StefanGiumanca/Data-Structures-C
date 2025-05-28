@@ -1,0 +1,5 @@
+Paris,Franta,18000000,4.7
+Tokyo,Japonia,15000000,4.6
+Madrid,Spania,9500000,4.4
+New York,SUA,13000000,4.5
+Barcelona,Spania,8500000,4.3
